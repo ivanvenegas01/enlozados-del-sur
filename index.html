@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título más cortito y al pie -->
+  <title>Enlozados del Sur </title>
+  
+  <!-- El Favicon para que aparezca tu logo en la pestaña -->
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+
+  <meta name="description" content="Especialistas en enlozado real, anulación de hidromasajes y reparación sin obra. Base en Banfield y trabajos por todo el país.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              200: '#e9d5ff',
+              300: '#d8b4fe',
+              400: '#c084fc',
+              500: '#a855f7',
+              600: '#9333ea',
+              700: '#7e22ce',
+              800: '#6b21a8',
+              900: '#581c87',
+              accent: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Iconos Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- BARRA SUPERIOR DE CONTACTO -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Base Central en <strong>Banfield</strong> · Cobertura en CABA, GBA y Viajes</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/5491173698291?text=Hola%20Enlozados%20del%20Sur!%20Quiero%20consultar%20por%20un%20enlozado" target="_blank" class="hover:text-emerald-400 flex items-center gap-1.5 font-semibold transition text-emerald-400">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+          <span>11-7369-8291</span>
+        </a>
+        <a href="https://www.instagram.com/enlozadosdelsur/" target="_blank" rel="noopener" class="hover:opacity-80 flex items-center gap-1.5 transition text-slate-300">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24"><defs><linearGradient id="igTopGrad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fdf497"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igTopGrad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>@enlozadosdelsur</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      
+      <!-- LOGO CON GOTAS -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 transition transform group-hover:rotate-12 duration-300">
+          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+            <defs>
+              <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c084fc"/>
+                <stop offset="50%" stop-color="#a855f7"/>
+                <stop offset="100%" stop-color="#38bdf8"/>
+              </linearGradient>
+            </defs>
+            <g fill="url(#navLogoGrad)">
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" />
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" transform="rotate(60 50 50)" />
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" transform="rotate(120 50 50)" />
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" transform="rotate(180 50 50)" />
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" transform="rotate(240 50 50)" />
+              <path d="M 50 14 C 42 14 36 21 37 29 C 38 35 44 40 50 37 C 54 35 56 30 54 26 C 52 20 48 16 50 14 Z" transform="rotate(300 50 50)" />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight text-slate-900 block leading-none">ENLOZADOS <span class="text-brand-600">DEL SUR</span></span>
+          <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Renovamos sin obra</span>
+        </div>
+      </a>
+
+      <!-- NAVEGACIÓN DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+        <a href="#conocenos" class="hover:text-brand-600 transition">Conocenos</a>
+        <a href="#servicios" class="hover:text-brand-600 transition">Servicios</a>
+        <a href="#diferencial" class="hover:text-brand-600 transition">Enlozado Real</a>
+        <a href="#bitacora" class="hover:text-brand-600 transition flex items-center gap-1 text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-100">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Enlozados en Ruta
+        </a>
+        <a href="#tienda" class="hover:text-brand-600 transition">Alfombras PVC</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- 1. HERO PRINCIPAL -->
+  <section class="relative pt-10 pb-14 md:pt-16 md:pb-20 overflow-hidden bg-gradient-to-b from-brand-50/40 via-white to-slate-50">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- LADO IZQUIERDO: Texto principal y botones -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-brand-600 text-white mb-6 shadow-sm">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-200"></i> Renovamos sin obra · En 1 día
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
+          Renovar tu bañadera <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-sky-500">puede ser más fácil</span> <br>
+          de lo que pensás.
+        </h1>
+
+        <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
+          Sin romper azulejos ni meterte en albañilería eterna. Tratamos el óxido, reparamos fisuras y devolvemos un blanco porcelanizado de alto brillo y resistencia.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3.5">
+          <a href="https://wa.me/5491173698291?text=Hola%20Enlozados%20del%20Sur!%20Te%20mando%20foto%20de%20mi%20baño%20para%20ver%20si%20es%20apto" 
+             target="_blank" 
+             class="inline-flex justify-center items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-black px-6 py-4 rounded-xl shadow-lg shadow-[#25D366]/25 transition transform active:scale-95 text-base">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+            <span>Consultá si tu bañera es apta</span>
+          </a>
+          <a href="#bitacora" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-100 text-slate-800 font-bold px-6 py-4 rounded-xl border border-slate-300 shadow-sm transition">
+            <i data-lucide="compass" class="w-4 h-4 text-brand-600"></i>
+            Ver Bitácora de Rutas
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-4 pt-6 border-t border-slate-200">
+          <div>
+            <div class="text-2xl font-black text-slate-900">En 1 Día</div>
+            <div class="text-xs text-slate-500 font-medium">A domicilio</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-slate-900">0 Obra</div>
+            <div class="text-xs text-slate-500 font-medium">Sin romper paredes</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-slate-900">100% Real</div>
+            <div class="text-xs text-slate-500 font-medium">No es pintura común</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LADO DERECHO: Tarjeta de caso real de Instagram -->
+      <div class="lg:col-span-5">
+        <div class="bg-gradient-to-b from-brand-50/80 to-purple-100/50 p-5 sm:p-6 rounded-3xl border border-brand-200/90 shadow-xl shadow-brand-900/10 relative max-w-md mx-auto">
+          
+          <div class="flex items-center justify-between text-xs mb-3.5 pb-2.5 border-b border-brand-200/60">
+            <span class="inline-flex items-center gap-1.5 font-black text-brand-800 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full border border-brand-200 text-[11px] uppercase tracking-wide shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+              Caso Real en Instagram
+            </span>
+            <span class="text-brand-900/60 font-bold text-xs">@enlozadosdelsur</span>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden border border-brand-200/90 mb-4 bg-white aspect-[4/3] shadow-md">
+            <img 
+              src="img/antes-despues.jpg" 
+              alt="Cambio de color de azul a blanco enlozado" 
+              class="w-full h-full object-cover"
+              onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80'"
+            />
+            <div class="absolute top-2.5 left-2.5 bg-brand-700 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+              CAMBIO DE COLOR TOTAL
+            </div>
+          </div>
+
+          <h3 class="text-xl font-black leading-tight text-slate-900 mb-2">
+            De azul desgastado a blanco brillante
+          </h3>
+          
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200 border-l-4 border-brand-500 shadow-sm mb-5">
+            <p class="text-xs text-slate-900 italic leading-relaxed">
+              "Muchas veces nos consultan si es posible cambiar el color del enlozado y la respuesta es: <strong>¡SÍ, POR SUPUESTO!</strong>"
+            </p>
+          </div>
+
+          <a href="https://wa.me/5491173698291?text=Hola%20Enlozados%20del%20Sur!%20Quiero%20hacer%20un%20cambio%20de%20color%20en%20mi%20bañera" 
+             target="_blank" 
+             class="w-full py-3.5 bg-[#25D366] hover:bg-[#20ba5a] text-white text-sm font-black rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/25 active:scale-95">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+            <span>Mandanos foto de tu bañera</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- 2. SECCIÓN COMPACTA: CONOCENOS -->
+  <section id="conocenos" class="py-12 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="bg-gradient-to-br from-brand-50/70 via-white to-slate-50 rounded-3xl border border-brand-100 p-6 sm:p-8 shadow-sm">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-5 relative">
+            <div class="absolute -top-3 left-4 z-10 bg-brand-700 text-white font-black text-xs px-3.5 py-1 rounded shadow-md tracking-wider uppercase">
+              CONOCENOS
+            </div>
+            
+            <div class="relative rounded-2xl overflow-hidden border-4 border-white shadow-lg aspect-[4/3] bg-slate-200">
+              <img src="img/nosotros.jpg" alt="Facu y Valen - Enlozados del Sur" class="w-full h-full object-contain" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-3 text-white text-xs font-semibold flex items-center gap-1.5">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+                Lomas de Zamora / Banfield · 26 años
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-7">
+            <div class="inline-flex items-center gap-2 text-brand-600 font-bold text-xs uppercase tracking-wider mb-2">
+              <span>✨ El equipo detrás de Enlozados del Sur</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
+              Somos Facu y Valen
+            </h2>
+
+            <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+              Somos dos jóvenes de 26 años que nos lanzamos juntos a cumplir un sueño: crear nuestro propio emprendimiento para ayudarte a transformar los espacios de tu hogar y darles nueva vida sin necesidad de meterte en una obra.
+            </p>
+
+            <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+              Mientras <strong>Facu</strong> se encarga de las reparaciones y el enlozado con una obsesión en cada detalle para que todo recupere su brillo original, <strong>Valen</strong> está detrás de las redes y la atención, escuchándote y acompañándote desde el primer mensaje para asesorarte sin vueltas.
+            </p>
+
+            <div class="mt-5 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+              <span class="text-xs text-slate-500 italic">
+                "Ponemos el corazón en cada casa que nos abre las puertas." 💜
+              </span>
+              
+              <!-- BOTÓN A INSTAGRAM OSCURO -->
+              <a href="https://www.instagram.com/enlozadosdelsur/" 
+                 target="_blank" 
+                 class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-md transition transform active:scale-95">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+                <span>Mirá nuestro día a día en Instagram</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICIOS PRINCIPALES -->
+  <section id="servicios" class="py-16 md:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-brand-600">Trabajos que realizamos</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Soluciones para tu Baño</h2>
+        <p class="mt-2 text-slate-600 text-sm">Bañeras de fundición, chapa, fibra, bachas y transformaciones completas.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
+            <i data-lucide="bath" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Enlozado de Bañeras</h3>
+          <p class="text-sm text-slate-600 mt-2">Bañeras antiguas de fundición, chapa o fibra de vidrio. Acabado blanco radiante de alto brillo.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center mb-4">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Anulación de Hidromasajes</h3>
+          <p class="text-sm text-slate-600 mt-2">Anulación de jets en desuso y sellado estructural. Convertimos jacuzzis en cómodas bañeras tradicionales.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4">
+            <i data-lucide="wrench" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Reparación de Óxidos</h3>
+          <p class="text-sm text-slate-600 mt-2">Soldado de chapas perforadas, nivelación con masillas epoxi sanitarias y refuerzo de fondo.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <i data-lucide="grid" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Bachas y Azulejos</h3>
+          <p class="text-sm text-slate-600 mt-2">Renovación integral de bachas, vanitorys y paredes de azulejos sin entrar en obra pesada.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+            <i data-lucide="hotel" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Línea Hoteles</h3>
+          <p class="text-sm text-slate-600 mt-2">Mantenimiento y recuperación por lote para hoteles y alojamientos turísticos en todo el país.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">Asesoramiento Directo</h3>
+          <p class="text-sm text-slate-600 mt-2">Te decimos con honestidad si tu artefacto es apto mandando una foto por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN: CARRUSEL DE ANTES Y DESPUÉS -->
+  <section id="casos-reales" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-brand-100 text-brand-700 mb-4">
+          <i data-lucide="image" class="w-3.5 h-3.5"></i> Trabajos Reales
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          El antes y después <br class="hidden sm:block"> de nuestro enlozado.
+        </h2>
+      </div>
+      <div class="hidden sm:flex gap-2">
+        <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </div>
+        <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 shadow-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </div>
+      </div>
+    </div>
+
+   <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-8 px-4 sm:px-8 max-w-[1400px] mx-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+      
+      <!-- TARJETA 1 -->
+      <div class="snap-center sm:snap-start shrink-0 w-[85vw] sm:w-[340px] bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative">
+        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+          <img src="img/caso1.jpg" alt="Recuperación de bañera oxidada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80'">
+          <div class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider shadow-sm">ÓXIDO EXTREMO</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Restauración de base</h3>
+          <p class="text-sm text-slate-500 mb-4">Tratamiento profundo de óxido en la zona del desagüe y esmaltado completo.</p>
+        </div>
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="snap-center sm:snap-start shrink-0 w-[85vw] sm:w-[340px] bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative">
+        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+          <img src="img/caso2.jpg" alt="Renovación de bañera antigua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80'">
+          <div class="absolute top-3 left-3 bg-brand-600 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider shadow-sm">BAÑERA ANTIGUA</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Renovación integral</h3>
+          <p class="text-sm text-slate-500 mb-4">Recuperamos el brillo original de una bañera de los años 70 sin necesidad de sacarla.</p>
+        </div>
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="snap-center sm:snap-start shrink-0 w-[85vw] sm:w-[340px] bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative">
+        <div class="relative aspect-[4/3] bg-slate-200 overflow-hidden flex items-center justify-center">
+          <!-- Usamos object-contain y p-4 para que se vea más alejada y completa -->
+          <img src="img/caso5.jpeg" alt="Preparación de superficie" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80'">
+          <div class="absolute top-3 left-3 bg-sky-500 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider shadow-sm z-10">EN ACCIÓN</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Preparación al detalle</h3>
+          <p class="text-sm text-slate-500 mb-4">El secreto de nuestra durabilidad está en el decapado y la limpieza profunda antes de aplicar el enlozado.</p>
+        </div>
+      </div>
+      <!-- TARJETA 4 -->
+      <div class="snap-center sm:snap-start shrink-0 w-[85vw] sm:w-[340px] bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative">
+        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+          <img src="img/caso4.jpg" alt="Anulación de hidromasaje" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80'">
+          <div class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider shadow-sm">CHAU HIDRO</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Anulación de Hidromasaje</h3>
+          <p class="text-sm text-slate-500 mb-4">Anulamos los picos y el motor sin uso, transformando este hidro en una bañera clásica, lisa y lista para usar.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. DIFERENCIAL TÉCNICO: ENLOZADO REAL VS PINTURA COMÚN -->
+  <section id="diferencial" class="py-16 md:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-brand-600">Oficio y Honestidad</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">¿Qué es un Enlozado Real?</h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          Muchos piensan que es "solo pintar por encima". En <strong>Enlozados del Sur</strong> te mostramos con hechos por qué nuestro trabajo no se descascara, usando una bacha real como ejemplo.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        
+        <div class="p-6 sm:p-7 rounded-3xl bg-slate-50 border border-red-200/80 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 text-red-600 font-black text-sm mb-3">
+              <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+              <span>Lo que suele fallar (Pintar por encima)</span>
+            </div>
+            
+            <div class="relative rounded-xl overflow-hidden mb-4 border border-red-100 aspect-video bg-white">
+              <img 
+                src="img/bacha-antes.jpg" 
+                alt="Bacha con pintura vieja descascarada" 
+                class="w-full h-full object-cover"
+                onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80'"
+              />
+              <div class="absolute bottom-2 left-2 bg-red-950/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                Capas sueltas por falta de mordiente
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✕</span>
+                <span><strong>Sin neutralizar el sarro y óxido:</strong> Si no se decapa con ácido, el material se sigue picando por debajo.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✕</span>
+                <span><strong>Pintura sobre pintura:</strong> Con el agua caliente y el roce constante, el esmalte común se engloba y se desprende en láminas.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-400">
+            Dura pocos meses y obliga a remover todo de cero.
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-7 rounded-3xl bg-white border-2 border-brand-500 shadow-xl shadow-brand-500/10 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-brand-600 text-white text-[10px] font-black uppercase px-4 py-1 rounded-bl-xl tracking-wider">
+            Nuestra Técnica
+          </div>
+          <div>
+            <div class="inline-flex items-center gap-2 text-brand-700 font-black text-sm mb-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-600"></i>
+              <span>El Enlozado Real de Enlozados del Sur</span>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden mb-4 border border-brand-100 aspect-video bg-slate-100">
+              <img 
+                src="img/bacha-despues.jpg" 
+                alt="Bacha restaurada con enlozado real brillante" 
+                class="w-full h-full object-cover"
+                onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80'"
+              />
+              <div class="absolute bottom-2 left-2 bg-brand-950/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                Sellado porcelanizado parejo y duradero
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-600 font-black">✓</span>
+                <span><strong>Decapado químico profundo:</strong> Abrimos el poro microscópico del material original para lograr máxima adherencia.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-600 font-black">✓</span>
+                <span><strong>Turbina de calor y epoxi bicomponente:</strong> Curado óptimo garantizado, logrando una superficie súper resistente al uso diario.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-brand-700 font-bold">
+            Resultado parejo, blanco radiante y preparado para durar años.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ <!-- 6. BITACORA MAPA (SOLAPAS, COORDENADAS EXACTAS Y FOTO AJUSTADA) -->
+  <section id="bitacora" class="py-16 md:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-black uppercase tracking-widest text-brand-600">Bitácora de Viajes</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Enlozados en Ruta</h2>
+          <p class="text-slate-600 text-sm mt-1">
+            Nuestra base está en <strong>Banfield</strong>, pero salimos en la camioneta a donde nos llamen. Elegí la zona:
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- COLUMNA IZQUIERDA: MAPA Y BOTONES -->
+        <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-4 sm:p-6 shadow-inner relative overflow-hidden flex flex-col">
+          
+          <!-- SOLAPAS (TABS) -->
+          <div class="flex justify-center gap-3 mb-5">
+            <button id="btnAmba" onclick="switchMap('amba')" class="px-5 py-2.5 rounded-xl bg-brand-600 text-white font-bold text-sm shadow-md transition-all active:scale-95">
+              📍 AMBA / Locales
+            </button>
+            <button id="btnInterior" onclick="switchMap('interior')" class="px-5 py-2.5 rounded-xl bg-white text-slate-600 font-bold text-sm border border-slate-200 hover:bg-slate-50 shadow-sm transition-all active:scale-95">
+              🛣️ Viajes al Interior
+            </button>
+          </div>
+
+          <!-- CONTENEDOR MAPA 1: AMBA (Predeterminado) -->
+          <div id="mapaAmba" class="relative w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+            
+            <img src="img/mapa-buenosaires.jpeg" alt="Mapa de Buenos Aires" class="w-full h-full object-contain p-2" />
+            <div class="absolute inset-0 bg-slate-900/5 pointer-events-none"></div>
+
+            <!-- PIN CABA (SOLANS) -->
+            <div class="absolute flex flex-col items-center transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-105 transition z-10" style="top: 25%; left: 58%;" onclick="selectStory('solans')">
+              <span class="relative flex h-4 w-4">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-4 w-4 bg-purple-600 border border-white shadow-md"></span>
+              </span>
+              <span class="mt-1 bg-white/95 backdrop-blur border border-slate-200/80 text-purple-900 text-[9px] font-extrabold px-1.5 py-0.5 rounded shadow-sm">CABA</span>
+            </div>
+
+            <!-- PIN BANFIELD (BASE) -->
+            <div class="absolute flex items-center transform -translate-y-1/2 cursor-pointer hover:scale-105 transition z-10" style="top: 30%; left: 63%;" onclick="selectStory('banfield')">
+              <div class="relative bg-slate-900 text-white p-1.5 rounded-full shadow-lg border border-white z-10 shrink-0">
+                <i data-lucide="home" class="w-3.5 h-3.5"></i>
+              </div>
+              <span class="ml-1.5 bg-white/95 backdrop-blur border border-slate-200/80 text-slate-800 text-[10px] font-extrabold px-1.5 py-0.5 rounded shadow-sm whitespace-nowrap">Banfield Base</span>
+            </div>
+          </div>
+
+          <!-- CONTENEDOR MAPA 2: INTERIOR (Oculto al inicio) -->
+          <div id="mapaInterior" class="relative w-full aspect-[4/3] bg-slate-100 rounded-2xl border border-slate-200 overflow-hidden shadow-sm group hidden">
+            
+            <img src="img/mapa-argentina.jpeg" alt="Mapa de Argentina" class="w-full h-full object-contain p-2" />
+            <div class="absolute inset-0 bg-slate-900/5 pointer-events-none"></div>
+
+            <!-- RUTAS PUNTEADAS Y FLECHA CONECTOR MAR DEL PLATA -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none z-0" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <!-- A Rosario -->
+              <line x1="57" y1="39" x2="52" y2="34" stroke="#94a3b8" stroke-width="0.3" stroke-dasharray="1.2 1.2" />
+              <!-- A la costa de Mar del Plata (directo al círculo rojo) -->
+              <line x1="57" y1="39" x2="57.5" y2="42" stroke="#94a3b8" stroke-width="0.3" stroke-dasharray="1.2 1.2" />
+              
+              <!-- FLECHA/CONECTOR DE MAR DEL PLATA HACIA LA COSTA -->
+              <path d="M 60.5,47.5 Q 59.5,44.5 57.8,42.5" fill="none" stroke="#6b21a8" stroke-width="0.3" stroke-dasharray="0.5" />
+              <!-- Punta de la flecha apuntando a la costa -->
+              <polygon points="57.4,43.2 57.6,42.2 58.4,42.7" fill="#6b21a8" />
+            </svg>
+
+            <!-- PIN BANFIELD (BASE INTERIOR) -->
+            <div class="absolute flex items-center transform -translate-y-1/2 cursor-pointer hover:scale-110 transition z-10" style="top: 39%; left: 57%;" onclick="selectStory('banfield')">
+              <div class="w-2.5 h-2.5 rounded-full bg-slate-800 border-[1.5px] border-white shadow-md transform -translate-x-1/2"></div>
+              <span class="ml-1 text-slate-800 text-[8px] font-black bg-white/60 backdrop-blur px-1 rounded">Base</span>
+            </div>
+
+            <!-- PIN ROSARIO -->
+            <div class="absolute flex flex-col items-center transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition z-10" style="top: 34%; left: 52%;" onclick="selectStory('rosario')">
+              <div class="bg-white rounded-full shadow-md text-purple-600 flex items-center justify-center p-0.5">
+                <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+              </div>
+              <span class="mt-1 bg-white/90 backdrop-blur text-purple-900 text-[8px] font-bold px-1.5 py-0.5 rounded shadow-sm">Rosario</span>
+            </div>
+
+            <!-- PIN MAR DEL PLATA (Desplazado con aire y conector) -->
+            <div class="absolute flex flex-col items-center transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition z-10" style="top: 48%; left: 61%;" onclick="selectStory('mardel')">
+              <div class="bg-white rounded-full shadow-md text-purple-600 flex items-center justify-center p-0.5 animate-pulse">
+                <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+              </div>
+              <span class="mt-1 bg-white/95 border border-purple-100 backdrop-blur text-purple-950 text-[8px] font-extrabold px-1.5 py-0.5 rounded shadow-md whitespace-nowrap">Mar del Plata</span>
+            </div>
+
+            <!-- LA CAMIONETA ANIMADA -->
+            <div id="camionetaAnimada" class="absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ease-in-out z-20" style="top: 39%; left: 57%;">
+              <div class="bg-brand-500 text-white p-0.5 rounded shadow-md border border-white">
+                <i data-lucide="truck" class="w-3 h-3"></i>
+              </div>
+            </div>
+
+          </div>
+          <!-- BOTONES RÁPIDOS INFERIORES -->
+          <div class="mt-4 flex flex-wrap gap-2 text-xs justify-center sm:justify-start">
+            <span class="text-slate-500 font-medium self-center mr-1">Ir rápido a:</span>
+            <button onclick="selectStory('banfield')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-brand-500 font-semibold text-slate-700 hover:text-brand-600 transition">Base</button>
+            <button onclick="selectStory('solans')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-brand-500 font-semibold text-slate-700 hover:text-brand-600 transition">CABA</button>
+            <button onclick="selectStory('rosario')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-brand-500 font-semibold text-slate-700 hover:text-brand-600 transition">Rosario</button>
+            <button onclick="selectStory('mardel')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-brand-500 font-semibold text-slate-700 hover:text-brand-600 transition">Costa Atlántica</button>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: TARJETA DE TRABAJO -->
+        <div class="lg:col-span-5">
+          <div id="storyCard" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xl relative transition-all duration-300">
+            
+            <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-4 mb-4">
+              <span id="storyTag" class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-brand-100 text-brand-700">Nuestra Base Central</span>
+              <span id="storyDistance" class="text-xs font-semibold text-slate-400 flex items-center gap-1">
+                <i data-lucide="navigation" class="w-3.5 h-3.5"></i> Km 0 · Zona Sur
+              </span>
+            </div>
+
+            <!-- FOTO DEL TRABAJO (ACÁ SE ARREGLÓ EL RECORTE) -->
+            <div class="relative rounded-2xl overflow-hidden mb-4 border border-slate-200 aspect-[4/3] bg-slate-100">
+              <img id="storyImg" src="img/nosotros.jpg" alt="Trabajo Realizado" class="w-full h-full object-cover object-[center_60%]" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80'" />
+              <div id="storyImgTag" class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded">Atención diaria</div>
+            </div>
+
+            <h3 id="storyTitle" class="text-xl font-black text-slate-900 leading-tight">El Taller en Banfield</h3>
+
+            <div class="my-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs sm:text-sm text-slate-700 leading-relaxed italic" id="storyQuote">
+              "Acá preparamos las herramientas, cargamos la camioneta utilitaria y coordinamos cada salida para salir a renovar baños por toda la región."
+            </div>
+
+            <div class="space-y-1.5 text-xs text-slate-600 mb-5">
+              <div class="flex items-start gap-2">
+                <span class="text-brand-600 font-bold">🛠️ Logística:</span>
+                <span id="storyDetails">Atención diaria en Gran Buenos Aires y Capital Federal.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✨ Contacto:</span>
+                <span id="storyResult">Presupuestos en el día por foto de WhatsApp.</span>
+              </div>
+            </div>
+
+            <!-- BOTONES BALANCEADOS -->
+            <div class="flex flex-col sm:flex-row gap-2.5">
+              <a id="storyLink" href="https://www.instagram.com/enlozadosdelsur/" target="_blank" rel="noopener" class="flex-1 inline-flex justify-center items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 px-4 rounded-xl shadow-sm transition transform active:scale-95">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+                <span>Ver reel en Instagram</span>
+              </a>
+              
+              <a href="https://wa.me/5491173698291?text=Hola!%20Vi%20sus%20trabajos%20en%20ruta%20y%20quería%20consultar%20por%20mi%20zona" target="_blank" class="flex-1 inline-flex justify-center items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold py-3 px-4 rounded-xl shadow-md shadow-[#25D366]/20 transition transform active:scale-95">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+                <span>Escribinos</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TIENDA -->
+  <section id="tienda" class="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- COLUMNA IZQUIERDA (Textos) -->
+        <div class="lg:col-span-7">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-brand-500/20 text-brand-300 border border-brand-500/30 mb-4">
+            Cuidado del Enlozado
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-black leading-tight">⚠️ ¡Ojo con qué alfombra usás en tu bañera enlozada!</h2>
+          <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            Las alfombras comunes con ventosas hacen un efecto sopapa continuo que genera tensión y puede levantar el material. Por eso recomendamos nuestras <strong>alfombras sin ventosas de PVC</strong>.
+          </p>
+
+          <div class="mt-6 grid sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-800 border border-slate-700 flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span><strong>100% PVC</strong> de máxima calidad</span></div>
+            <div class="p-3.5 rounded-xl bg-slate-800 border border-slate-700 flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span><strong>Antideslizantes y antiestrés</strong></span></div>
+            <div class="p-3.5 rounded-xl bg-slate-800 border border-slate-700 flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span><strong>Medida:</strong> 30 x 60 cm</span></div>
+            <div class="p-3.5 rounded-xl bg-slate-800 border border-slate-700 flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span><strong>Colores:</strong> Transparente, Beige y Marrón</span></div>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/5491173698291?text=Hola!%20Quería%20consultar%20precio%20y%20envío%20de%20la%20alfombra%20sin%20ventosas" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-black px-6 py-3.5 rounded-xl transition inline-flex items-center gap-2 text-sm">
+              <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+              <span>Consultar stock y envíos por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA (Tarjeta con las fotos reales) -->
+        <div class="lg:col-span-5 bg-slate-800 p-6 rounded-3xl border border-slate-700 text-center">
+          
+          <!-- CONTENEDOR DE IMÁGENES ALFOMBRAS (GRILLA MINIMALISTA) -->
+          <div class="relative rounded-2xl overflow-hidden mb-4 border border-slate-700 aspect-[4/3] grid grid-cols-1 sm:grid-cols-2 gap-0.5 bg-slate-700">
+            
+            <!-- Foto 1: Vista Completa -->
+            <div class="relative w-full h-full">
+              <img src="img/IMG-20260921-WA0018.jpg" alt="Vista completa de la alfombra PVC" class="w-full h-full object-cover" />
+              <div class="absolute bottom-2 left-2 pointer-events-none">
+                <span class="bg-slate-900/80 backdrop-blur border border-white/10 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                  Vista completa
+                </span>
+              </div>
+            </div>
+
+            <!-- Foto 2: Detalle (El Zoom) -->
+            <div class="relative w-full h-full hidden sm:block">
+              <img src="img/alfombra-pvc-detalle-sin-ventosas.jpg" alt="Detalle de base sin ventosas" class="w-full h-full object-cover" />
+              <div class="absolute bottom-2 left-2 pointer-events-none">
+                <span class="bg-purple-900/90 backdrop-blur border border-purple-400/30 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                  Base sin ventosas
+                </span>
+              </div>
+            </div>
+
+          </div>
+          <!-- Fin Grilla -->
+
+          <h4 class="font-black text-lg text-white">Protección para tu nueva superficie</h4>
+          <p class="text-xs text-slate-300 mt-1 max-w-xs mx-auto">Segura para pies descalzos y amigable con el acabado enlozado.</p>
+          <div class="mt-3 inline-block text-xs font-bold text-amber-300 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">📦 Envíos a todo el país o entrega en mano</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-6 text-center sm:text-left">
+      <div>
+        <div class="text-white font-black text-base">ENLOZADOS DEL SUR</div>
+        <p class="mt-1 text-slate-400">Base en Banfield · Coberturas y viajes por Argentina.</p>
+      </div>
+      <div class="flex items-center gap-5 text-slate-300">
+        <a href="https://wa.me/5491173698291?text=Hola%20Enlozados%20del%20Sur!%20Quiero%20consultar%20por%20un%20enlozado" target="_blank" class="hover:text-[#25D366] flex items-center gap-2 transition text-slate-300">
+          <svg class="w-4 h-4 fill-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+          <span>11-7369-8291</span>
+        </a>
+        <a href="https://www.instagram.com/enlozadosdelsur/" target="_blank" rel="noopener" class="hover:opacity-80 flex items-center gap-2 transition text-slate-300">
+          <svg class="w-4 h-4" viewBox="0 0 24 24"><defs><linearGradient id="igFooterGrad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fdf497"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igFooterGrad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>@enlozadosdelsur</span>
+        </a>
+        <a href="https://linktr.ee/enlozadosdelsur" target="_blank" class="hover:text-white flex items-center gap-1.5 transition">
+          <i data-lucide="link" class="w-4 h-4"></i> linktr.ee
+        </a>
+      </div>
+    </div>
+  </footer>
+
+ <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5491173698291?text=Hola%20Enlozados%20del%20Sur,%20quiero%20cotizar%20el%20enlozado%20de%20mi%20bañera" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-3.5 rounded-full shadow-2xl transition hover:scale-110 flex items-center justify-center drop-shadow-lg" title="Mandar foto por WhatsApp">
+    <svg class="w-8 h-8" fill="#ffffff" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.32 13.86 15.12 13.28 14.9 13.19C14.67 13.11 14.5 13.06 14.34 13.31C14.17 13.56 13.71 14.11 13.57 14.27C13.43 14.44 13.29 14.46 13.05 14.34C12.81 14.21 11.79 13.88 10.58 12.8C9.64 11.96 9 10.93 8.87 10.7C8.73 10.46 8.85 10.33 8.98 10.21C9.09 10.09 9.23 9.91 9.35 9.77C9.47 9.63 9.52 9.53 9.6 9.36C9.68 9.2 9.64 9.05 9.58 8.94C9.53 8.83 9.05 7.66 8.85 7.18C8.66 6.71 8.46 6.77 8.31 6.77L8.53 7.33Z"/></svg>
+  </a>
+
+  <!-- SCRIPT DE INTERACTIVIDAD E ÍCONOS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+      switchMap('amba');
+    });
+
+    const travelStories = {
+      solans: {
+        tag: "Línea Hoteles",
+        distance: "CABA · Recoleta",
+        title: "Hotel Solans Carlton",
+        quote: '"El hotel tenía capas viejas de pintura descascarada que se salían solas. Decapamos todo hasta el material base y devolvimos un blanco porcelanizado con sellado térmico."',
+        details: "Retiro completo de capas sueltas y tratamiento químico de adherencia.",
+        result: "Bañera como nueva lista para huéspedes sin romper azulejos.",
+        img: "img/solans-despues.jpg",
+        imgTag: "Acabado Porcelanizado de Alto Tránsito",
+        link: "https://www.instagram.com/enlozadosdelsur/",
+        mapType: "amba",
+        imgClass: "object-[center_60%]" // Centrado normal
+      },
+      rosario: {
+        tag: "Viaje al Litoral",
+        distance: "300 km desde Banfield",
+        title: "Rosario y Alrededores",
+        quote: '"Viajes programados para atender departamentos antiguos y complejos turísticos en la ribera santafesina."',
+        details: "Remoción profunda con ácido y masillado epoxi en óxidos difíciles.",
+        result: "Trabajos terminados en el día con total durabilidad.",
+        img: "img/solans-despues.jpg",
+        imgTag: "Enlozado en Ruta",
+        link: "https://www.instagram.com/enlozadosdelsur/",
+        mapType: "interior",
+        imgClass: "object-center" // Centrado normal
+      },
+      mardel: {
+        tag: "Costa Atlántica",
+        distance: "400 km desde Banfield",
+        title: "Rumbo a La Feliz",
+        quote: '"Llegamos a la costa para recuperar bañeras muy castigadas por el salitre y la humedad constante del mar."',
+        details: "Tratamiento anticorrosivo especial y curado con aire caliente.",
+        result: "Superficies brillantes y protegidas contra el sarro.",
+        img: "img/antes-despues.jpg",
+        imgTag: "Restauración extrema",
+        link: "https://www.instagram.com/enlozadosdelsur/",
+        mapType: "interior",
+        imgClass: "object-center" // Centrado normal
+      },
+      banfield: {
+        tag: "Nuestra Base Central",
+        distance: "Km 0 · Zona Sur",
+        title: "El Taller en Banfield",
+        quote: '"Acá preparamos las herramientas, cargamos la camioneta utilitaria y coordinamos cada salida para salir a renovar baños por toda la región."',
+        details: "Atención diaria en Gran Buenos Aires y Capital Federal.",
+        result: "Presupuestos en el día por foto de WhatsApp.",
+        img: "img/nosotros.jpg",
+        imgTag: "Atención diaria",
+        link: "https://www.instagram.com/enlozadosdelsur/",
+        mapType: "amba",
+        imgClass: "object-[center_60%]" // Ajuste para que se vea bien la selfie
+      }
+    };
+
+    function switchMap(type) {
+      const btnAmba = document.getElementById('btnAmba');
+      const btnInterior = document.getElementById('btnInterior');
+      const mapaAmba = document.getElementById('mapaAmba');
+      const mapaInterior = document.getElementById('mapaInterior');
+
+      if(type === 'amba') {
+        mapaAmba.classList.remove('hidden');
+        mapaInterior.classList.add('hidden');
+        
+        btnAmba.className = "px-5 py-2.5 rounded-xl bg-brand-600 text-white font-bold text-sm shadow-md transition-all active:scale-95";
+        btnInterior.className = "px-5 py-2.5 rounded-xl bg-white text-slate-600 font-bold text-sm border border-slate-200 hover:bg-slate-50 shadow-sm transition-all active:scale-95";
+        
+        selectStory('banfield', false);
+      } else {
+        mapaAmba.classList.add('hidden');
+        mapaInterior.classList.remove('hidden');
+        
+        btnInterior.className = "px-5 py-2.5 rounded-xl bg-brand-600 text-white font-bold text-sm shadow-md transition-all active:scale-95";
+        btnAmba.className = "px-5 py-2.5 rounded-xl bg-white text-slate-600 font-bold text-sm border border-slate-200 hover:bg-slate-50 shadow-sm transition-all active:scale-95";
+        
+        selectStory('rosario', false);
+      }
+    }
+
+    function selectStory(key, autoSwitchMap = true) {
+      const data = travelStories[key];
+      if (!data) return;
+
+      if(autoSwitchMap) {
+        if(data.mapType === 'amba' && document.getElementById('mapaAmba').classList.contains('hidden')) {
+           switchMap('amba');
+        } else if (data.mapType === 'interior' && document.getElementById('mapaInterior').classList.contains('hidden')) {
+           switchMap('interior');
+        }
+      }
+
+      document.getElementById('storyTag').textContent = data.tag;
+      document.getElementById('storyDistance').innerHTML = `<i data-lucide="navigation" class="w-3.5 h-3.5"></i> ${data.distance}`;
+      document.getElementById('storyTitle').textContent = data.title;
+      document.getElementById('storyQuote').textContent = data.quote;
+      document.getElementById('storyDetails').textContent = data.details;
+      document.getElementById('storyResult').textContent = data.result;
+      document.getElementById('storyLink').href = data.link;
+
+      const imgEl = document.getElementById('storyImg');
+      const imgTagEl = document.getElementById('storyImgTag');
+      if (imgEl && data.img) {
+        imgEl.src = data.img;
+        imgTagEl.textContent = data.imgTag;
+        
+        // Aplicamos la clase de ajuste dinámicamente
+        imgEl.className = `w-full h-full object-cover transition-all duration-500 ${data.imgClass}`;
+      }
+      lucide.createIcons();
+
+      // ANIMACIÓN DE LA CAMIONETA (Coordenadas ajustadas finales)
+      const camioneta = document.getElementById('camionetaAnimada');
+      if(camioneta && !document.getElementById('mapaInterior').classList.contains('hidden')) {
+        if(key === 'rosario') {
+          // Va a Rosario
+          camioneta.style.top = '34%';
+          camioneta.style.left = '52%';
+          camioneta.style.transform = 'translate(-50%, -50%) scaleX(-1)';
+        } else if (key === 'mardel') {
+          // Va a Mar del Plata (directo al círculo rojo de la costa)
+          camioneta.style.top = '42%'; 
+          camioneta.style.left = '57.5%'; 
+          camioneta.style.transform = 'translate(-50%, -50%) scaleX(1)';
+        } else {
+          // Vuelve a la base (Banfield)
+          camioneta.style.top = '39%';
+          camioneta.style.left = '57%';
+          camioneta.style.transform = 'translate(-50%, -50%) scaleX(-1)';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
